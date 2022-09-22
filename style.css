@@ -21,12 +21,16 @@ body {
   font-weight: 400;
   color: #344563;
   background-color: #e5e5e5;
-  margin-inline: 5rem;
-}
+ }
 
-section {
+ section {
   padding: 2rem 10%;
-}
+ }
+ .btn:hover {
+  background-color: #6070ff;
+ }
+
+
 
  /*=========Header========*/
 header {
@@ -36,12 +40,12 @@ header {
   align-items: center;
   text-align: center;
   padding: .3rem 9%;
-}
+ }
 
 .navlink li {
   display: inline-block;
   margin: 1rem;
-}
+ }
 
 .navlink li:hover {
   border-bottom: 2px solid #091E42;
@@ -175,10 +179,21 @@ button {
 .mobile {
   display: none;
 }
-.flexbox .order-2 {
-  flex-direction: row-reverse;
+
+.order-2 .portfoilio-img{
+  order: 2;
 }
 
+.order-2 .article-text {
+  order: 1;
+}
+.order-4 .portfoilio-img{
+  order: 2;
+}
+
+.order-4 .article-text {
+  order: 1;
+}
 /*==========about==========*/
 .about {
   background-color: #fff;
@@ -225,6 +240,58 @@ button {
 
 .Frameworks {
   border-bottom: 1px solid #6070ff;
+}
+
+.contact {
+  background: url(./images/contact\ form-\ background-shape-desktop.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5rem 0 0 0;
+  padding: -1.5rem;
+  width: 100%;
+}
+
+/*==========contact form===========*/
+.contact-context {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-context h1 {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.6;
+  letter-spacing: 1.5;
+}
+
+.contact-main {
+  text-align: center;
+  font-size: 1rem;
+  color: #EBEBFF;
+  width: 30vw;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input {
+  padding: .5rem 2rem;
+}
+
+.form-btn {
+  background-color: #fff;
+  border-radius: .5rem;
+  color: #6070ff;
 }
 
 
