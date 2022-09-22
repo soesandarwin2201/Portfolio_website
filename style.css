@@ -1,104 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- border: none;
- outline: none;
- text-transform: capitalize;
- text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
- font-family: 'Poppins', sans-serif;
- font-size: 0.89rem;
- line-height: 28px;
- font-weight: 400;
- color: #344563;
- background-color: #e5e5e5;
- margin-inline: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.89rem;
+  line-height: 28px;
+  font-weight: 400;
+  color: #344563;
+  background-color: #e5e5e5;
+  margin-inline: 5rem;
 }
 
 section {
- padding: 2rem 10%;
+  padding: 2rem 10%;
 }
 
-
-
-/*=========Header========*/
+ /*=========Header========*/
 header {
- background-color: transparent;
- display: flex;
- justify-content: space-between;
- align-items: center;
- text-align: center;
- padding: .3rem 9%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: .3rem 9%;
 }
 
 .navlink li {
- display: inline-block;
- margin: 1rem;
+  display: inline-block;
+  margin: 1rem;
 }
 
 .navlink li:hover {
- border-bottom: 2px solid #091E42;
+  border-bottom: 2px solid #091E42;
 }
 
 /*=========home section===========*/
 .home {
- width: 100%;
+  width: 100%;
  /* height: 100vh; */
- background: url(./images/Header\ bg.svg);
- background-position: center center;
- background-repeat: no-repeat;
- background-size: cover; 
- background-attachment: fixed;
+  background: url(./images/Header\ bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
 }
 
 .home-content {
- width: 65vw;
- margin-top: 12rem;
- margin-bottom: 5rem;
+  width: 65vw;
+  margin-top: 12rem;
+  margin-bottom: 5rem;
 }
 
 .home-title {
- font-size: 2.5rem;
- font-weight: 900;
- line-height: 1.6;
- letter-spacing: 1.4;
- color: #091F42;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 1.4;
+  color: #091F42;
 }
 
 .home-main {
- font-weight: 200;
- color: #344563;
- font-size: 1rem;
- line-height: 1.6;
- letter-spacing: 1.4;
+  font-weight: 200;
+  color: #344563;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 1.4;
 }
 
 .home-content span {
- color: #7F8CFF;
- font-size: .89rem;
- margin-top: 1rem;
+  color: #7F8CFF;
+  font-size: .89rem;
+  margin-top: 1rem;
 }
 
 .social_links  li{
- display: inline-block;
- margin: .5rem;
- color: #505f79;
- font-size: .9rem;
+  display: inline-block;
+  margin: .5rem;
+  color: #505f79;
+  font-size: .9rem;
 }
 
 .toggle {
- display: none;
- font-size: 2rem;
- color: #344563;
+  display: none;
+  font-size: 2rem;
+  color: #344563;
 }
 
 /*========portfoilio======*/
@@ -184,53 +182,53 @@ button {
 
 
 @media (max-width: 768px) {
-  body {
-   margin-inline: 0 auto;
+   body {
+     margin-inline: 0 auto;
   }
 
-  .home {
-   background: url(./images/header-shapes\ mobile@2x.svg);
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   .home {
+     background: url(./images/header-shapes\ mobile@2x.svg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
   }
 
-  .logo {
-   font-size: 1.5rem;
+   .logo {
+     font-size: 1.5rem;
   }
 
-  .toggle {
-   display: block;
+   .toggle {
+     display: block;
   }
 
-  .navlink  {
-   position: fixed;
-   width: 100%;
-   height: 100vh;
-   background-color: #6070FF;
-   top: 0;
-   left: -110%;
-   text-align: center;
-   transition: .2 all ease-in;
+   .navlink  {
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background-color: #6070ff;
+     top: 0;
+     left: -110%;
+     text-align: center;
+     transition: .2 all ease-in;
   }
 
-  .navlink li {
-   display: block;
-   padding: 1rem;
+   .navlink li {
+     display: block;
+     padding: 1rem;
   }
 
-  .navlink li a {
-   font-size: 1.5rem;
-   color: #fff;
+   .navlink li a {
+     font-size: 1.5rem;
+     color: #fff;
   }
 
-  .toggle:checked ~ ul {
-   left: 0;
+   .toggle:checked ~ ul {
+     left: 0;
   }
 
-  .home-content {
-   margin-top: 7rem;
-   margin-bottom: 5rem;
+   .home-content {
+     margin-top: 7rem;
+     margin-bottom: 5rem;
  }
 
  /* .flexbox {
