@@ -50,7 +50,7 @@ header {
 /*=========home section===========*/
 .home {
   width: 100%;
- /* height: 100vh; */
+  background-color: #fff;
   background: url(./images/Header\ bg.svg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ header {
 }
 
 /*========portfoilio======*/
-/* .flexbox {
+.flexbox {
   display: flex;
   background-color: #fff;
   gap: 2rem;
@@ -174,10 +174,58 @@ button {
 
 .mobile {
   display: none;
+}
+.flexbox .order-2 {
+  flex-direction: row-reverse;
+}
+
+/*==========about==========*/
+/* .about {
+  background-color: #fff;
+  border-radius: 0 5rem 0 0;
+  width: 100%;
+}
+.about-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.about-content {
+  flex-basis: 45%;
+}
+
+.lang {
+  flex-basis: 55%;
+}
+
+.about-main {
+  font-size: 1rem;
+  color: #344563;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.lang-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
+}
+
+.lang-img img {
+  display: inline-block;
+  margin: .5rem;
+}
+
+.Frameworks {
+  border-bottom: 1px solid #6070ff;
 } */
-
-
-
 
 
 
@@ -231,7 +279,7 @@ button {
      margin-bottom: 5rem;
  }
 
- /* .flexbox {
+ .flexbox {
   flex-direction: column;
  } 
 
@@ -251,6 +299,10 @@ button {
  }
  .order-4{
   order: 2;
+ }
+
+ /* .about-wrapper  {
+  flex-direction: column;
  } */
 
   
