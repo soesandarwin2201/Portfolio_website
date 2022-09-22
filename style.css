@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ border: none;
+ outline: none;
+ text-transform: capitalize;
+ text-decoration: none;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+ font-size: 0.89rem;
+ line-height: 28px;
+ font-weight: 400;
+ color: #344563;
+ background-color: #e5e5e5;
+ margin-inline: 5rem;
+}
+
+section {
+ padding: 2rem 10%;
+}
+
+
+
+/*=========Header========*/
+header {
+ background-color: transparent;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+ padding: .3rem 9%;
+}
+
+.navlink li {
+ display: inline-block;
+ margin: 1rem;
+}
+
+.navlink li:hover {
+ border-bottom: 2px solid #091E42;
+}
+
+/*=========home section===========*/
+.home {
+ width: 100%;
+ /* height: 100vh; */
+ background: url(./images/Header\ bg.svg);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover; 
+ background-attachment: fixed;
+}
+
+.home-content {
+ width: 65vw;
+ margin-top: 12rem;
+ margin-bottom: 5rem;
+}
+
+.home-title {
+ font-size: 2.5rem;
+ font-weight: 900;
+ line-height: 1.6;
+ letter-spacing: 1.4;
+ color: #091F42;
+}
+
+.home-main {
+ font-weight: 200;
+ color: #344563;
+ font-size: 1rem;
+ line-height: 1.6;
+ letter-spacing: 1.4;
+}
+
+.home-content span {
+ color: #7F8CFF;
+ font-size: .89rem;
+ margin-top: 1rem;
+}
+
+.social_links  li{
+ display: inline-block;
+ margin: .5rem;
+ color: #505f79;
+ font-size: .9rem;
+}
+
+.toggle {
+ display: none;
+ font-size: 2rem;
+ color: #344563;
+}
+
+/*========portfoilio======*/
+/* .flexbox {
+  display: flex;
+  background-color: #fff;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+}
+
+.flexbox .portfoilio-img {
+  flex-basis: 50%;
+  margin: 2rem;
+}
+
+.flexbox .article-text {
+  flex-basis: 50%;
+  margin: 2rem;
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 1.5;
+  color: #091E42;
+}
+
+.job {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #344563;
+  margin-bottom: 1rem;
+}
+
+.job span {
+  font-size: 1rem;
+  color: #6B778c;
+  letter-spacing: 1.5;
+}
+
+.articel-context {
+  color: #344563;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.4;
+  margin-bottom: 1rem;
+}
+
+.btns {
+  display: felx;
+  flex-direction: column;
+}
+
+button {
+  background-color: #EBEBFF;
+  border-radius: 8px;
+  padding: .5rem .9rem;
+  margin: .3rem;
+  color: #6070ff;
+}
+
+.btn {
+  background-color: transparent;
+  color: #6070ff;
+  padding: .9rem 3rem;
+  font-size: 0.875rem;
+  letter-spacing: 2.7;
+  border-radius: .5rem;
+  font-weight: 500;
+  border: 1px solid #7f8cff;box-shadow: 0px 8px 16px rgba(64,83,252,0.24);
+  margin-top: 3rem;
+}
+
+.mobile {
+  display: none;
+} */
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body {
+   margin-inline: 0 auto;
+  }
+
+  .home {
+   background: url(./images/header-shapes\ mobile@2x.svg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  .logo {
+   font-size: 1.5rem;
+  }
+
+  .toggle {
+   display: block;
+  }
+
+  .navlink  {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background-color: #6070FF;
+   top: 0;
+   left: -110%;
+   text-align: center;
+   transition: .2 all ease-in;
+  }
+
+  .navlink li {
+   display: block;
+   padding: 1rem;
+  }
+
+  .navlink li a {
+   font-size: 1.5rem;
+   color: #fff;
+  }
+
+  .toggle:checked ~ ul {
+   left: 0;
+  }
+
+  .home-content {
+   margin-top: 7rem;
+   margin-bottom: 5rem;
+ }
+
+ /* .flexbox {
+  flex-direction: column;
+ } 
+
+ .portfoilio-wrapper{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .order-1{
+  order: 3;
+ }
+ .order-2{
+  order: 4;
+ }
+ .order-3{
+  order: 1;
+ }
+ .order-4{
+  order: 2;
+ } */
+
+  
+  
+}
+
+
+
+
+
+
+
