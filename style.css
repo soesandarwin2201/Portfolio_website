@@ -58,13 +58,12 @@ header {
 /* =========home section=========== */
 
 .home {
-    width: 100%;
-  /* height: 100vh; */
-    background: url(./images/Header\ bg.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  width: 100%;
+  background: url(./images/Header\ bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .home-content {
@@ -89,7 +88,7 @@ header {
   letter-spacing: 1.4;
 }
 
-.home-content  span  {
+.home-content span {
   color: #7f8cff;
   font-size: 0.89rem;
   margin-top: 1rem;
@@ -101,88 +100,10 @@ header {
   color: #344563;
 }
 
-/* ========portfoilio====== */
-
-/* .flexbox {
-  display: flex;
-  background-color: #fff;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  border-radius: 2rem;
-}
-
-.flexbox .portfoilio-img {
-  flex-basis: 50%;
-  margin: 2rem;
-}
-
-.flexbox .article-text {
-  flex-basis: 50%;
-  margin: 2rem;
-}
-
-.project-name {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 1.6;
-  letter-spacing: 1.5;
-  color: #091E42;
-}
-
-.job {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #344563;
-  margin-bottom: 1rem;
-}
-
-.job span {
-  font-size: 1rem;
-  color: #6B778c;
-  letter-spacing: 1.5;
-}
-
-.articel-context {
-  color: #344563;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 1.4;
-  margin-bottom: 1rem;
-}
-
-.btns {
-  display: felx;
-  flex-direction: column;
-}
-
-button {
-  background-color: #EBEBFF;
-  border-radius: 8px;
-  padding: .5rem .9rem;
-  margin: .3rem;
-  color: #6070ff;
-}
-
-.btn {
-  background-color: transparent;
-  color: #6070ff;
-  padding: .9rem 3rem;
-  font-size: 0.875rem;
-  letter-spacing: 2.7;
-  border-radius: .5rem;
-  font-weight: 500;
-  border: 1px solid #7f8cff;box-shadow: 0px 8px 16px rgba(64,83,252,0.24);
-  margin-top: 3rem;
-}
-
-.mobile {
-  display: none;
-} */
-
 @media (max-width: 768px) {
   body {
     margin-inline: 0 auto;
-    }
+  }
 
   .home {
     background: url(./images/header-shapes\ mobile@2x.svg);
@@ -228,26 +149,4 @@ button {
     margin-top: 7rem;
     margin-bottom: 5rem;
   }
-
-  /* .flexbox {
-  flex-direction: column;
- } 
-
- .portfoilio-wrapper{
-  display: flex;
-  flex-direction: column;
- }
-
- .order-1{
-  order: 3;
- }
- .order-2{
-  order: 4;
- }
- .order-3{
-  order: 1;
- }
- .order-4{
-  order: 2;
- } */
 }
