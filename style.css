@@ -28,14 +28,14 @@ section {
   padding: 2rem 10%;
 }
 
- /*=========Header========*/
+/*=========Header========*/
 header {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: .3rem 9%;
+  padding: 0.3rem 9%;
 }
 
 .navlink li {
@@ -44,7 +44,7 @@ header {
 }
 
 .navlink li:hover {
-  border-bottom: 2px solid #091E42;
+  border-bottom: 2px solid #091e42;
 }
 
 /*=========home section===========*/
@@ -54,7 +54,7 @@ header {
   background: url(./images/Header\ bg.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -69,7 +69,7 @@ header {
   font-weight: 900;
   line-height: 1.6;
   letter-spacing: 1.4;
-  color: #091F42;
+  color: #091f42;
 }
 
 .home-main {
@@ -81,16 +81,16 @@ header {
 }
 
 .home-content span {
-  color: #7F8CFF;
-  font-size: .89rem;
+  color: #7f8cff;
+  font-size: 0.89rem;
   margin-top: 1rem;
 }
 
-.social_links  li{
+.social_links li {
   display: inline-block;
-  margin: .5rem;
+  margin: 0.5rem;
   color: #505f79;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .toggle {
@@ -123,7 +123,7 @@ header {
   font-weight: 700;
   line-height: 1.6;
   letter-spacing: 1.5;
-  color: #091E42;
+  color: #091e42;
 }
 
 .job {
@@ -135,7 +135,7 @@ header {
 
 .job span {
   font-size: 1rem;
-  color: #6B778c;
+  color: #6b778c;
   letter-spacing: 1.5;
 }
 
@@ -153,22 +153,23 @@ header {
 }
 
 button {
-  background-color: #EBEBFF;
+  background-color: #ebebff;
   border-radius: 8px;
-  padding: .5rem .9rem;
-  margin: .3rem;
+  padding: 0.5rem 0.9rem;
+  margin: 0.3rem;
   color: #6070ff;
 }
 
 .btn {
   background-color: transparent;
   color: #6070ff;
-  padding: .9rem 3rem;
+  padding: 0.9rem 3rem;
   font-size: 0.875rem;
   letter-spacing: 2.7;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: 500;
-  border: 1px solid #7f8cff;box-shadow: 0px 8px 16px rgba(64,83,252,0.24);
+  border: 1px solid #7f8cff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
   margin-top: 3rem;
 }
 
@@ -227,91 +228,79 @@ button {
   border-bottom: 1px solid #6070ff;
 } */
 
-
-
 @media (max-width: 768px) {
-   body {
-     margin-inline: 0 auto;
+  body {
+    margin-inline: 0 auto;
   }
 
-   .home {
-     background: url(./images/header-shapes\ mobile@2x.svg);
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-size: cover;
+  .home {
+    background: url(./images/header-shapes\ mobile@2x.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-   .logo {
-     font-size: 1.5rem;
+  .logo {
+    font-size: 1.5rem;
   }
 
-   .toggle {
-     display: block;
+  .toggle {
+    display: block;
   }
 
-   .navlink  {
-     position: fixed;
-     width: 100%;
-     height: 100vh;
-     background-color: #6070ff;
-     top: 0;
-     left: -110%;
-     text-align: center;
-     transition: .2 all ease-in;
+  .navlink {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #6070ff;
+    top: 0;
+    left: -110%;
+    text-align: center;
+    transition: 0.2 all ease-in;
   }
 
-   .navlink li {
-     display: block;
-     padding: 1rem;
+  .navlink li {
+    display: block;
+    padding: 1rem;
   }
 
-   .navlink li a {
-     font-size: 1.5rem;
-     color: #fff;
+  .navlink li a {
+    font-size: 1.5rem;
+    color: #fff;
   }
 
-   .toggle:checked ~ ul {
-     left: 0;
+  .toggle:checked ~ ul {
+    left: 0;
   }
 
-   .home-content {
-     margin-top: 7rem;
-     margin-bottom: 5rem;
- }
+  .home-content {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
 
- .flexbox {
-  flex-direction: column;
- } 
+  .flexbox {
+    flex-direction: column;
+  }
 
- .portfoilio-wrapper{
-  display: flex;
-  flex-direction: column;
- }
+  .portfoilio-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
- .order-1{
-  order: 3;
- }
- .order-2{
-  order: 4;
- }
- .order-3{
-  order: 1;
- }
- .order-4{
-  order: 2;
- }
+  .order-1 {
+    order: 3;
+  }
+  .order-2 {
+    order: 4;
+  }
+  .order-3 {
+    order: 1;
+  }
+  .order-4 {
+    order: 2;
+  }
 
- /* .about-wrapper  {
+  /* .about-wrapper  {
   flex-direction: column;
  } */
-
-  
-  
 }
-
-
-
-
-
-
-
