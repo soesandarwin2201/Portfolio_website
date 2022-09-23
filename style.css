@@ -181,7 +181,7 @@ button {
 }
 
 /*==========about==========*/
-/* .about {
+.about {
   background-color: #fff;
   border-radius: 0 5rem 0 0;
   width: 100%;
@@ -226,7 +226,7 @@ button {
 
 .Frameworks {
   border-bottom: 1px solid #6070ff;
-} */
+}
 
 @media (max-width: 768px) {
   body {
