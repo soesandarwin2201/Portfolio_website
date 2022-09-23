@@ -20,7 +20,7 @@ body {
   line-height: 28px;
   font-weight: 400;
   color: #344563;
-  background-color: #e5e5e5;
+  background-color: #fff;
   margin-inline: 5rem;
 }
 
@@ -39,6 +39,10 @@ header {
   padding: 0.3rem 9%;
 }
 
+.logo {
+  color: #6070ff;
+}
+
 .navlink li {
   display: inline-block;
   margin: 1rem;
@@ -47,8 +51,8 @@ header {
 .social_links li {
   display: inline-block;
   margin: 0.5rem;
-  color: #505f79;
-  font-size: 0.9rem;
+  color: #7f8cff;
+  font-size: 0.89rem;
 }
 
 .navlink li:hover {
@@ -86,9 +90,10 @@ header {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 1.4;
+  font-family: 'Poppins';
 }
 
-.home-content span {
+.home-content h5 {
   color: #7f8cff;
   font-size: 0.89rem;
   margin-top: 1rem;
@@ -97,7 +102,7 @@ header {
 .toggle {
   display: none;
   font-size: 2rem;
-  color: #344563;
+  color: #6070ff;
 }
 
 @media (max-width: 768px) {
@@ -114,6 +119,7 @@ header {
 
   .logo {
     font-size: 1.5rem;
+    color: #6070ff;
   }
 
   .toggle {
