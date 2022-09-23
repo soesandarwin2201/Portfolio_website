@@ -8,6 +8,7 @@
   outline: none;
   text-transform: capitalize;
   text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -151,11 +152,11 @@ header {
 }
 
 .btns {
-  display: felx;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
 }
 
-button {
+.button {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 0.5rem 0.9rem;
@@ -212,6 +213,12 @@ button {
   letter-spacing: 1.5;
   line-height: 1.5;
   font-weight: 400;
+}
+
+h5 {
+  color: #7f8cff;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 .lang-title {
