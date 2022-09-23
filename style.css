@@ -300,7 +300,15 @@ button {
     order: 2;
   }
 
-  /* .about-wrapper  {
-  flex-direction: column;
- } */
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
 }
