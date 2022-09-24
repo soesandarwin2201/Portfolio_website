@@ -30,6 +30,12 @@ section {
   padding: 2rem 10%;
 }
 
+h5 {
+  color: #7f8cff;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
 /* =========Header======== */
 
 header {
@@ -251,12 +257,6 @@ header {
   letter-spacing: 1.5;
   line-height: 1.5;
   font-weight: 400;
-}
-
-h5 {
-  color: #7f8cff;
-  font-size: 0.8rem;
-  margin-top: 1rem;
 }
 
 .lang-title {
