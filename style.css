@@ -107,14 +107,50 @@ header {
 .flexbox {
   display: flex;
   background-color: #fff;
-  gap: 2rem;
+  gap: 0.5rem;
   margin-bottom: 3rem;
   border-radius: 2rem;
+  height: 65vh;
 }
 
-.flexbox .portfoilio-img {
+.portfoilio-img {
   flex-basis: 50%;
-  margin: 2rem;
+  margin: 3rem;
+}
+
+.Snapshoot {
+  background-image: url(./images/Snapshoot\ Portfolio.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.human {
+  background-image: url(./images/mobile.svg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-1 {
+  background-image: url(./images/Snapshoot\ Portfolio1.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-2 {
+  background-image: url(./images/Snapshoot\ human.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-3 {
+  background-image: url(./images/Snapshoot\ Portfolio2.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .flexbox .article-text {
@@ -174,15 +210,11 @@ header {
   font-weight: 500;
   border: 1px solid #7f8cff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .mobile {
   display: none;
-}
-
-.flexbox .order-2 {
-  flex-direction: row-reverse;
 }
 
 /* ==========about========== */
@@ -293,6 +325,9 @@ h5 {
 
   .flexbox {
     flex-direction: column;
+    height: 90vh;
+    gap: 0.3rem;
+    margin-bottom: 2rem;
   }
 
   .portfoilio-wrapper {
