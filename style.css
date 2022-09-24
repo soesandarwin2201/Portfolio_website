@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.89rem;
+  line-height: 28px;
+  font-weight: 400;
+  color: #344563;
+  background-color: #e5e5e5;
+  margin-inline: 5rem;
+}
+
+section {
+  padding: 2rem 10%;
+}
+
+/* =========Header======== */
+
+header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.3rem 9%;
+}
+
+.logo {
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.navlink li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.social_links li {
+  display: inline-block;
+  margin: 0.5rem;
+  color: #7f8cff;
+  font-size: 0.9rem;
+}
+
+.navlink li:hover {
+  border-bottom: 2px solid #091e42;
+}
+
+/* =========home section=========== */
+
+.home {
+  width: 100%;
+  background-image: url(./images/header-shapes\ mobile@2x.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-content {
+  width: 65vw;
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 1.4;
+  color: #091f42;
+}
+
+.home-main {
+  font-weight: 200;
+  color: #344563;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 1.4;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-content h5 {
+  color: #7f8cff;
+  font-size: 0.89rem;
+  margin-top: 1rem;
+}
+
+.toggle {
+  display: none;
+  font-size: 2rem;
+  color: #6070ff;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-inline: 0 auto;
+  }
+
+  .home {
+    background: url(./images/header-shapes\ mobile@2x.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    color: #6070ff;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .navlink {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #6070ff;
+    top: 0;
+    left: -110%;
+    text-align: center;
+    transition: 0.2 all ease-in;
+  }
+
+  .navlink li {
+    display: block;
+    padding: 1rem;
+  }
+
+  .navlink li a {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .toggle:checked ~ ul {
+    left: 0;
+  }
+
+  .home-content {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
+}
