@@ -296,8 +296,10 @@ h5 {
   }
 
   .portfoilio-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    width: 100%;
+    margin: 1rem auto;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   }
 
   .order-1 {
