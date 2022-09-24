@@ -9,6 +9,7 @@
   text-transform: capitalize;
   text-decoration: none;
   list-style: none;
+  background-color: #fff;
 }
 
 html {
@@ -40,6 +41,12 @@ header {
   padding: 0.3rem 9%;
 }
 
+.logo {
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
 .navlink li {
   display: inline-block;
   margin: 1rem;
@@ -48,7 +55,7 @@ header {
 .social_links li {
   display: inline-block;
   margin: 0.5rem;
-  color: #505f79;
+  color: #7f8cff;
   font-size: 0.9rem;
 }
 
@@ -60,8 +67,7 @@ header {
 
 .home {
   width: 100%;
-  background-color: #fff;
-  background-image: url(./images/Header\ bg.svg);
+  background-image: url(./images/header-shapes\ mobile@2x.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,7 +96,7 @@ header {
   letter-spacing: 1.4;
 }
 
-.home-content span {
+.home-content h5 {
   color: #7f8cff;
   font-size: 0.89rem;
   margin-top: 1rem;
