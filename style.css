@@ -9,6 +9,7 @@
   text-transform: capitalize;
   text-decoration: none;
   list-style: none;
+  background-color: #fff;
 }
 
 html {
@@ -59,7 +60,7 @@ header {
 .social_links li {
   display: inline-block;
   margin: 0.5rem;
-  color: #505f79;
+  color: #7f8cff;
   font-size: 0.9rem;
 }
 
@@ -106,7 +107,7 @@ header {
   font-family: 'Poppins';
 }
 
-.home-content span {
+.home-content h5 {
   color: #7f8cff;
   font-size: 0.89rem;
   margin-top: 1rem;
@@ -262,12 +263,6 @@ button {
   letter-spacing: 1.5;
   line-height: 1.5;
   font-weight: 400;
-}
-
-h5 {
-  color: #7f8cff;
-  font-size: 0.8rem;
-  margin-top: 1rem;
 }
 
 .lang-title {
