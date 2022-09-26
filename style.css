@@ -8,6 +8,7 @@
   outline: none;
   text-transform: capitalize;
   text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -121,14 +122,50 @@ header {
 .flexbox {
   display: flex;
   background-color: #fff;
-  gap: 2rem;
+  gap: 0.5rem;
   margin-bottom: 3rem;
   border-radius: 2rem;
+  height: 65vh;
 }
 
-.flexbox .portfoilio-img {
+.portfoilio-img {
   flex-basis: 50%;
-  margin: 2rem;
+  margin: 3rem;
+}
+
+.Snapshoot {
+  background-image: url(./images/Snapshoot\ Portfolio.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.human {
+  background-image: url(./images/mobile.svg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-1 {
+  background-image: url(./images/Snapshoot\ Portfolio1.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-2 {
+  background-image: url(./images/Snapshoot\ human.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-3 {
+  background-image: url(./images/Snapshoot\ Portfolio2.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .flexbox .article-text {
@@ -166,8 +203,8 @@ header {
 }
 
 .btns {
-  display: felx;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
 }
 
 button {
@@ -225,6 +262,12 @@ button {
   letter-spacing: 1.5;
   line-height: 1.5;
   font-weight: 400;
+}
+
+h5 {
+  color: #7f8cff;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 .lang-title {
