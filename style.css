@@ -312,7 +312,7 @@ header {
 
 .contact_text {
   color: #ebebff;
-  font-size: .89rem;
+  font-size: 0.89rem;
   text-align: center;
   font-weight: 200;
   line-height: 1.4;
@@ -326,7 +326,7 @@ header {
   gap: 2rem;
 }
 
-.contact_form li {
+.contact-item {
   margin-bottom: 1rem;
 }
 
@@ -334,16 +334,16 @@ input,
 textarea {
   padding: 0.5rem 2rem;
   width: 100%;
-  border: 1px solid #ffF;
+  border: 1px solid #fff;
   background-color: #fff;
   color: #172b4d;
   font-size: 1rem;
   text-transform: none;
 }
 
-textarea::placeholder  {
+textarea::placeholder {
   color: #b3bac5;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 input::placeholder {
@@ -355,7 +355,7 @@ input::placeholder {
   color: #6060ff;
   font-size: 1rem;
   margin-bottom: 2rem;
-  box-shadow: 0 8px 16px rgba(64,83,252);
+  box-shadow: 0 8px 16px rgba(64, 83, 252);
   display: flex;
   justify-content: flex-start;
 }
