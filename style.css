@@ -278,6 +278,45 @@ header {
   border-bottom: 1px solid #6070ff;
 }
 
+/* ========contact form======== */
+
+.contact {
+  background: url(./images/tran.svg);
+  background-color: #6070ff;
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5rem 0 0 0;
+}
+
+.contact_wrapper {
+  width: 95%;
+  text-align: center;
+  margin-top: -1.8rem;
+  margin-inline: 4rem;
+}
+
+.contact_title {
+  padding-top: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  left: 1.5;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.contact_text {
+  color: #ebebff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.4;
+  width: 45vw;
+  margin-inline: 6rem;
+}
+
 @media (max-width: 768px) {
   body {
     margin-inline: 0 auto;
