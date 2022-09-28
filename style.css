@@ -388,12 +388,34 @@ input {
 
   .flexbox {
     flex-direction: column;
+    height: 90vh;
+    gap: 0.3rem;
+    margin-bottom: 2rem;
   }
 
   .portfoilio-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    width: 100%;
+    margin: 1rem auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ }
+
+  .order-2 .portfoilio-img {
+  order: 1;
   }
+
+  .order-2 .article-text {
+  order: 2;
+  }
+
+  .order-4 .portfoilio-img {
+  order: 1;
+  }
+
+  .order-4 .article-text {
+  order: 2;
+  }
+
 
   .order-1 {
     order: 3;
