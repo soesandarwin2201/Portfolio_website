@@ -284,7 +284,6 @@ button {
   border-bottom: 1px solid #6070ff;
 }
 
-<<<<<<< HEAD
 .contact {
   background: url(./images/contact\ form-\ background-shape-desktop.svg);
   background-position: center center;
@@ -300,31 +299,12 @@ button {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-=======
-/* ========contact form======== */
-
-.contact {
-  background: url(./images/tran.svg);
-  background-color: #6070ff;
-  background-position: center;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 5rem 0 0 0;
-}
-
-.contact_wrapper {
-  width: 100%;
-  text-align: center;
-  margin-top: -1.9rem;
->>>>>>> contact_project
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-<<<<<<< HEAD
 .contact-context h1 {
   font-size: 2rem;
   color: #fff;
@@ -354,77 +334,6 @@ input {
   background-color: #fff;
   border-radius: 0.5rem;
   color: #6070ff;
-=======
-.contact_title {
-  padding-top: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  left: 1.5;
-  color: #fff;
-  margin-bottom: 2rem;
-}
-
-.contact_text {
-  color: #ebebff;
-  font-size: 0.89rem;
-  text-align: center;
-  font-weight: 200;
-  line-height: 1.4;
-  width: 30vw;
-  margin-bottom: 1rem;
-}
-
-.contact_form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-item {
-  margin-bottom: 1rem;
-}
-
-input,
-textarea {
-  padding: 0.5rem 2rem;
-  width: 100%;
-  border: 1px solid #fff;
-  background-color: #fff;
-  color: #172b4d;
-  font-size: 1rem;
-  text-transform: none;
-}
-
-textarea::placeholder {
-  color: #b3bac5;
-  font-size: 0.7rem;
-}
-
-input::placeholder {
-  color: #172b4d;
-}
-
-.contact_btn {
-  background-color: #fff;
-  color: #6060ff;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 16px rgba(64, 83, 252);
-  display: flex;
-  justify-content: flex-start;
-}
-
-.contact_btn:hover {
-  background-color: #6060ff;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.contact_btn:disabled {
-  border-radius: 1px dotted #fff;
-  color: #5e6c84;
->>>>>>> contact_project
 }
 
 @media (max-width: 768px) {
