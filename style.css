@@ -54,6 +54,10 @@ header {
   align-items: center;
   text-align: center;
   padding: 0.3rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .social_links li {
@@ -76,17 +80,21 @@ header {
 .home {
   width: 100%;
   background-color: #fff;
-  background-image: url(./images/Header\ bg.svg);
+  background-image: url(./images/main.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
+  height: 100vh;
+  border-radius: 0 0 0 5rem;
+  margin-top: -1px;
 }
 
 .home-content {
   width: 65vw;
   margin-top: 12rem;
   margin-bottom: 5rem;
+  margin-inline: 5rem;
 }
 
 .home-title {
@@ -103,7 +111,7 @@ header {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 1.4;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 .home-content h5 {
@@ -271,6 +279,12 @@ button {
   margin-bottom: 2rem;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .arrow {
   font-size: 1.5rem;
 }
@@ -316,7 +330,7 @@ button {
   text-align: center;
   font-size: 1rem;
   color: #ebebff;
-  width: 30vw;
+  width: 35vw;
 }
 
 .contact-form {
@@ -345,7 +359,8 @@ input {
     background: url(./images/header-shapes\ mobile@2x.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #fff;
   }
 
   .logo {
@@ -384,6 +399,7 @@ input {
   .home-content {
     margin-top: 7rem;
     margin-bottom: 5rem;
+    margin-inline: 3rem;
   }
 
   .flexbox {
@@ -398,24 +414,23 @@ input {
     width: 100%;
     margin: 1rem auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
- }
+  }
 
   .order-2 .portfoilio-img {
-  order: 1;
+    order: 1;
   }
 
   .order-2 .article-text {
-  order: 2;
+    order: 2;
   }
 
   .order-4 .portfoilio-img {
-  order: 1;
+    order: 1;
   }
 
   .order-4 .article-text {
-  order: 2;
+    order: 2;
   }
-
 
   .order-1 {
     order: 3;
@@ -456,5 +471,12 @@ input {
   .contact_text {
     width: 80vw;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .portfoilio-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
