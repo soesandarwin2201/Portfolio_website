@@ -340,7 +340,7 @@ header {
     width: 100%;
     margin: 1rem auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
+ }
 
   .order-1 {
     order: 3;
