@@ -48,12 +48,12 @@ section {
 /* =========Header======== */
 
 header {
-  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 0.3rem 9%;
+  background-color: #fff;
 }
 
 .social_links li {
@@ -76,11 +76,14 @@ header {
 .home {
   width: 100%;
   background-color: #fff;
-  background-image: url(./images/Header\ bg.svg);
+  background-image: url(./images/main.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
+  border-radius: 0 0 0 5rem;
+  height: 100vh;
+  margin-top: -1px;
 }
 
 .home-content {
@@ -271,6 +274,12 @@ button {
   margin-bottom: 2rem;
 }
 
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .arrow {
   font-size: 1.5rem;
 }
@@ -285,13 +294,14 @@ button {
 }
 
 .contact {
-  background: url(./images/contact\ form-\ background-shape-desktop.svg);
+  background: url(./images/tran.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 5rem 0 0 0;
   padding: -1.5rem;
   width: 100%;
+  background-color: #6070ff;
 }
 
 /* ==========contact form=========== */
@@ -398,24 +408,23 @@ input {
     width: 100%;
     margin: 1rem auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
- }
+  }
 
   .order-2 .portfoilio-img {
-  order: 1;
+    order: 1;
   }
 
   .order-2 .article-text {
-  order: 2;
+    order: 2;
   }
 
   .order-4 .portfoilio-img {
-  order: 1;
+    order: 1;
   }
 
   .order-4 .article-text {
-  order: 2;
+    order: 2;
   }
-
 
   .order-1 {
     order: 3;
