@@ -54,7 +54,7 @@ h5 {
 /* =========Header======== */
 
 header {
-  background-color: transparent;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -353,7 +353,8 @@ input {
   color: #6070ff;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  
   body {
     margin-inline: 0 auto;
   }
@@ -364,6 +365,8 @@ input {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #fff;
+    width: 100%;
+    height: auto;
   }
 
   .logo {
@@ -417,6 +420,10 @@ input {
     width: 100%;
     margin: 1rem auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .portfoilio-img {
+    height: auto;
   }
 
   .order-2 .portfoilio-img {
