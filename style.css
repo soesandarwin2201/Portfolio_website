@@ -22,6 +22,7 @@ body {
   font-weight: 400;
   color: #344563;
   background-color: #e5e5e5;
+  overflow-x: hidden;
 }
 
 section {
@@ -72,7 +73,13 @@ header {
   left: 0;
   width: 100%;
 }
-
+.logo {
+  font-size: 15px;
+  transition: font-size 0.5s;
+}
+.logo:hover {
+  font-size: 30px;
+}
 .social_links li {
   display: inline-block;
   margin: 0.5rem;
@@ -139,7 +146,21 @@ header {
   line-height: 1.6;
   letter-spacing: 1.4;
   font-family: 'Poppins', sans-serif;
+  animation: hiddenP 2s;
 }
+
+@keyframes hiddenP {
+  from {
+    margin-right: -645px;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
 
 .toggle {
   display: none;
