@@ -45,15 +45,32 @@ section {
   background-color: #6070ff;
 }
 
+h4 {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #344563;
+}
+
+h5 {
+  color: #7f8cff;
+  font-size: 0.89rem;
+  margin-top: 1rem;
+}
+
 /* =========Header======== */
 
 header {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 0.3rem 9%;
-  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .social_links li {
@@ -81,8 +98,8 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
-  border-radius: 0 0 0 5rem;
   height: 100vh;
+  border-radius: 0 0 0 5rem;
   margin-top: -1px;
 }
 
@@ -90,6 +107,7 @@ header {
   width: 65vw;
   margin-top: 12rem;
   margin-bottom: 5rem;
+  margin-inline: 5rem;
 }
 
 .home-title {
@@ -106,13 +124,7 @@ header {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 1.4;
-  font-family: 'Poppins';
-}
-
-.home-content h5 {
-  color: #7f8cff;
-  font-size: 0.89rem;
-  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .toggle {
@@ -186,15 +198,25 @@ header {
 
 .job {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #344563;
   margin-bottom: 1rem;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .job span {
   font-size: 1rem;
   color: #6b778c;
   letter-spacing: 1.5;
+  font-weight: 400;
+}
+
+strong {
+  font-size: 2rem;
+  counter-reset: #6b778c;
+  font-weight: 800;
+  margin: 0.2rem;
 }
 
 .articel-context {
@@ -210,7 +232,7 @@ header {
   flex-direction: row;
 }
 
-button {
+.button {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 0.5rem 0.9rem;
@@ -276,12 +298,13 @@ button {
 
 .flex {
   display: flex;
-  gap: 1rem;
   align-items: center;
+  gap: 0.2rem;
 }
 
 .arrow {
   font-size: 1.5rem;
+  color: #acb7c3;
 }
 
 .lang-img img {
@@ -290,7 +313,7 @@ button {
 }
 
 .Frameworks {
-  border-bottom: 1px solid #6070ff;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .contact {
@@ -326,7 +349,7 @@ button {
   text-align: center;
   font-size: 1rem;
   color: #ebebff;
-  width: 30vw;
+  width: 35vw;
 }
 
 .contact-form {
@@ -346,7 +369,7 @@ input {
   color: #6070ff;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   body {
     margin-inline: 0 auto;
   }
@@ -355,7 +378,10 @@ input {
     background: url(./images/header-shapes\ mobile@2x.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
   }
 
   .logo {
@@ -394,6 +420,7 @@ input {
   .home-content {
     margin-top: 7rem;
     margin-bottom: 5rem;
+    margin-inline: 3rem;
   }
 
   .flexbox {
@@ -408,6 +435,10 @@ input {
     width: 100%;
     margin: 1rem auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .portfoilio-img {
+    height: auto;
   }
 
   .order-2 .portfoilio-img {
@@ -465,5 +496,12 @@ input {
   .contact_text {
     width: 80vw;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+  .portfoilio-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }

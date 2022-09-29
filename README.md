@@ -1,4 +1,5 @@
 # Portfolio_website
+# Desktop version
 
 ## Build with
  - Html
@@ -19,12 +20,4 @@
  
  Give a ⭐️ if you like this project!
  
-<<<<<<< HEAD
-<<<<<<< HEAD
- ##I forgot to submit the first project and continue to do the whole project, That's why i commented them.
-=======
 
->>>>>>> project_page
-=======
-
->>>>>>> d09d39730f44dfbd29759d4a1455589567635674
