@@ -73,13 +73,16 @@ header {
   left: 0;
   width: 100%;
 }
+
 .logo {
   font-size: 15px;
   transition: font-size 0.5s;
 }
+
 .logo:hover {
   font-size: 30px;
 }
+
 .social_links li {
   display: inline-block;
   margin: 0.5rem;
@@ -138,7 +141,6 @@ header {
   }
 }
 
-
 .home-main {
   font-weight: 200;
   color: #344563;
@@ -160,7 +162,6 @@ header {
     opacity: 1;
   }
 }
-
 
 .toggle {
   display: none;
