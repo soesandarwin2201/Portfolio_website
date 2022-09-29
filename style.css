@@ -116,7 +116,21 @@ header {
   line-height: 1.6;
   letter-spacing: 1.4;
   color: #091f42;
+  animation: hiddenH1 1s;
 }
+
+@keyframes hiddenH1 {
+  from {
+    margin-left: -645px;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
 
 .home-main {
   font-weight: 200;
