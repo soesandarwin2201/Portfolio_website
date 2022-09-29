@@ -45,6 +45,12 @@ section {
   background-color: #6070ff;
 }
 
+h5 {
+  color: #7f8cff;
+  font-size: 0.89rem;
+  margin-top: 1rem;
+}
+
 /* =========Header======== */
 
 header {
@@ -112,12 +118,6 @@ header {
   line-height: 1.6;
   letter-spacing: 1.4;
   font-family: 'Poppins', sans-serif;
-}
-
-.home-content h5 {
-  color: #7f8cff;
-  font-size: 0.89rem;
-  margin-top: 1rem;
 }
 
 .toggle {
@@ -191,15 +191,18 @@ header {
 
 .job {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #344563;
   margin-bottom: 1rem;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .job span {
   font-size: 1rem;
   color: #6b778c;
   letter-spacing: 1.5;
+  font-weight: 400;
 }
 
 .articel-context {
@@ -215,7 +218,7 @@ header {
   flex-direction: row;
 }
 
-button {
+.button {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 0.5rem 0.9rem;
@@ -282,7 +285,7 @@ button {
 .flex {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.2rem;
 }
 
 .arrow {
