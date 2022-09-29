@@ -48,7 +48,7 @@ section {
 h4 {
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: #344563;
 }
 
@@ -212,6 +212,13 @@ header {
   font-weight: 400;
 }
 
+strong {
+  font-size: 2rem;
+  counter-reset: #6b778c;
+  font-weight: 800;
+  margin: .2rem;
+}
+
 .articel-context {
   color: #344563;
   font-weight: 400;
@@ -297,6 +304,7 @@ header {
 
 .arrow {
   font-size: 1.5rem;
+  color: #acb7c3;
 }
 
 .lang-img img {
@@ -305,7 +313,7 @@ header {
 }
 
 .Frameworks {
-  border-bottom: 1px solid #6070ff;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .contact {
