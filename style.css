@@ -405,6 +405,21 @@ input {
   color: #6070ff;
 }
 
+.contact-form {
+  width: 50%;
+  animation: form 2s;
+  animation-delay: 5s;
+}
+
+@keyframes form {
+    from {
+      margin-left: -2197px;
+    }
+    to {
+      margin-left: 0;
+    }
+  }
+
 @media screen and (min-width: 200px) and (max-width: 768px) {
   body {
     margin-inline: 0 auto;
