@@ -179,6 +179,12 @@ header {
   height: 65vh;
 }
 
+.flexbox:hover {
+  border: 1px solid #091f42;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.9);
+}
+
+
 .portfoilio-img {
   flex-basis: 50%;
   margin: 3rem;
@@ -462,7 +468,7 @@ input {
     color: #fff;
   }
 
-  .toggle:checked ~ ul {
+  .toggle:checked~ul {
     left: 0;
   }
 
