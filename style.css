@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.89rem;
   line-height: 28px;
   font-weight: 400;
@@ -48,7 +48,7 @@ section {
 
 h4 {
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #344563;
 }
@@ -143,7 +143,7 @@ header {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 1.4;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   animation: hiddenP 2s;
 }
 
@@ -239,7 +239,7 @@ header {
   color: #344563;
   margin-bottom: 1rem;
   line-height: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .job span {
@@ -451,9 +451,8 @@ input {
     top: 0;
     left: -100%;
     text-align: center;
-    transition: 0.2 all ease-in;
     z-index: 100;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
   }
 
   .navlink li {
