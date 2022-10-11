@@ -95,10 +95,6 @@ header {
   margin: 1rem;
 }
 
-.navlink li:hover {
-  border-bottom: 2px solid #091e42;
-}
-
 /* =========home section=========== */
 .home {
   width: 100%;
@@ -447,34 +443,44 @@ input {
   }
 
   .navlink {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #6070ff;
+    background-color: rgba(97, 113, 255, 0.8);
+    backdrop-filter: blur(10px);
     top: 0;
-    left: -110%;
+    left: -100%;
     text-align: center;
-    transition: 0.2 all ease-in;
+    z-index: 100;
+    transition: all 0.4s ease;
   }
 
   .navlink li {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
     padding: 1rem;
   }
 
   .navlink li a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
+    font-weight: 600;
+    line-height: 44px;
   }
 
-  .toggle:checked ~ ul {
-    left: 0;
+  .navlink li .close-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    position: absolute;
+    top: 68px;
+    right: 38px;
   }
 
   .home-content {
     margin-top: 7rem;
     margin-bottom: 5rem;
     margin-inline: 3rem;
+    z-index: -1;
   }
 
   .flexbox {
