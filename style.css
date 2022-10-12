@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.89rem;
   line-height: 28px;
   font-weight: 400;
@@ -49,7 +49,7 @@ section {
 
 h4 {
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #344563;
 }
@@ -144,7 +144,7 @@ header {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 1.4;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   animation: hiddenP 2s;
 }
 
@@ -205,7 +205,7 @@ header {
   color: #344563;
   margin-bottom: 1rem;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .job span {
@@ -269,12 +269,13 @@ strong {
   height: 100vh;
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   background-color: rgba(143, 161, 178, 0.5);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(-100%);
 }
 
 .popup-container {
@@ -285,10 +286,10 @@ strong {
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
   display: grid;
-  grid-template-areas: 
-  popup-title popup-title popup-title
-  popup-img popup-img popup-img
-  pop-text pop-text pop-text;
+  grid-template-areas:
+    popup-title popup-title popup-title
+    popup-img popup-img popup-img
+    pop-text pop-text pop-text;
   position: relative;
 }
 
