@@ -44,6 +44,7 @@ section {
 
 .btn:hover {
   background-color: #6070ff;
+  color: #fff;
 }
 
 h4 {
@@ -185,41 +186,6 @@ header {
   margin: 3rem;
 }
 
-.Snapshoot {
-  background-image: url(./images/Snapshoot\ Portfolio.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.human {
-  background-image: url(./images/mobile.svg.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img-1 {
-  background-image: url(./images/Snapshoot\ Portfolio1.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img-2 {
-  background-image: url(./images/Snapshoot\ human.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img-3 {
-  background-image: url(./images/Snapshoot\ Portfolio2.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .flexbox .article-text {
   flex-basis: 50%;
   margin: 2rem;
@@ -295,6 +261,52 @@ strong {
 
 .order-4 .article-text {
   order: 1;
+}
+
+/* =========popup project======== */
+.popup-backgound {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left:0;
+  background-color: rgba(143, 161, 178, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  width: 95%;
+  height: 95%;
+  background-color: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  display: grid;
+  grid-template-areas: 
+  popup-title popup-title popup-title
+  popup-img popup-img popup-img
+  pop-text pop-text pop-text;
+  position: relative;
+}
+
+.popup-title {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-img {
+  flex-basis: 29%;
+}
+
+.pop-text {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ==========about========== */
