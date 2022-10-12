@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
   margin: 0;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.89rem;
   line-height: 28px;
   font-weight: 400;
@@ -48,7 +48,7 @@ section {
 
 h4 {
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #344563;
 }
@@ -143,7 +143,7 @@ header {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 1.4;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   animation: hiddenP 2s;
 }
 
@@ -239,7 +239,7 @@ header {
   color: #344563;
   margin-bottom: 1rem;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .job span {
@@ -407,6 +407,17 @@ input {
   background-color: #fff;
   border-radius: 0.5rem;
   color: #6070ff;
+}
+
+#error-message {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: #6070ff;
+  border: 1px solid #ff2b2b;
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 
 @keyframes form {
