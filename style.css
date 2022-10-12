@@ -264,7 +264,7 @@ strong {
 }
 
 /* =========popup project======== */
-.popup-backgound {
+#popup-backgound {
   width: 100vw;
   height: 100vh;
   position: fixed;
