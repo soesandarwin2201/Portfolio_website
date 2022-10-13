@@ -283,13 +283,13 @@ strong {
   height: 90%;
   background-color: #fff;
   border: 1px solid #ebecf0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   position: relative;
-  overflow: scroll; 
+  overflow: scroll;
 }
 
 .popup-title {
@@ -313,22 +313,21 @@ strong {
   align-items: center;
 }
 
-.articel-context {
+.articel-context-popup {
   flex-basis: 60%;
 }
 
-.btn-popup  {
+.btn-popup {
   flex-basis: 40%;
 }
 
-.btns {
+.btn-popup .btns {
   flex-wrap: wrap;
 }
 
 .btn-popup .btn {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
-
 
 #popup-btn {
   font-size: 1.2rem;
@@ -590,14 +589,14 @@ input {
     display: none;
   }
 
-  .popimg  {
+  .popimg {
     width: 80vh;
     height: 70vh;
   }
 
-  .pop-text  {
+  .pop-text {
     flex-direction: column;
-    margin-inline: .5rem;
+    margin-inline: 0.5rem;
   }
 
   .contact_wrapper {

@@ -1,4 +1,5 @@
 import projects from './data.js';
+
 const menuToggler = document.getElementById('toggle');
 const navMenu = document.getElementById('mobile-floating-nav');
 const closeBtn = document.getElementById('menu-close-btn');
@@ -11,7 +12,7 @@ const popupContainer = document.querySelector('.popup-container');
 const popupBackground = document.getElementById('popup-background');
 let popupBtns;
 
-let btnId = [];
+const btnId = [];
 
 menuToggler.addEventListener('click', () => {
   navMenu.style.left = '0';
@@ -34,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
   popupBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       if (btnId.includes(parseInt(e.target.dataset.id))) {
-        let projectIndex = projects[parseInt(e.target.dataset.id) - 1];
+        const projectIndex = projects[parseInt(e.target.dataset.id) - 1];
         popupContainer.innerHTML = `
         <div data-id=${projectIndex.id}>
         <div class="popup-title">
@@ -48,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
               </div>
               <img src="${projectIndex.projectimg}" alt="popup project img" class="popimg">
               <div class="pop-text">
-                <p class="articel-context">
+                <p class="articel-context-popup">
                     ${projectIndex.porjectDetail}
                   </p>
                   <div class="btn-popup">
@@ -71,7 +72,6 @@ window.addEventListener('DOMContentLoaded', () => {
       const popupBtn = document.getElementById('popup-btn');
       popupBtn.addEventListener('click', () => {
         popupBackground.style.transform = 'translateX(-100%)';
-        console.log("it is click");
       });
     });
   });
