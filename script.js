@@ -1,38 +1,38 @@
-import projects from "./data.js";
-const menuToggler = document.getElementById("toggle");
-const navMenu = document.getElementById("mobile-floating-nav");
-const closeBtn = document.getElementById("menu-close-btn");
-let navItems = document.getElementsByClassName("mob-nav-item");
+import projects from './data.js';
+const menuToggler = document.getElementById('toggle');
+const navMenu = document.getElementById('mobile-floating-nav');
+const closeBtn = document.getElementById('menu-close-btn');
+let navItems = document.getElementsByClassName('mob-nav-item');
 
 navItems = Array.prototype.slice.call(navItems);
 
-const portfolioWrapper = document.querySelector(".portfoilio-wrapper");
-const popupContainer = document.querySelector(".popup-container");
-const popupBackground = document.getElementById("popup-backgound");
+const portfolioWrapper = document.querySelector('.portfoilio-wrapper');
+const popupContainer = document.querySelector('.popup-container');
+const popupBackground = document.getElementById('popup-background');
 let popupBtns;
 
 let btnId = [];
 
-menuToggler.addEventListener("click", () => {
-  navMenu.style.left = "0";
+menuToggler.addEventListener('click', () => {
+  navMenu.style.left = '0';
 });
 
-closeBtn.addEventListener("click", () => {
-  navMenu.style.left = "-100%";
+closeBtn.addEventListener('click', () => {
+  navMenu.style.left = '-100%';
 });
 
 navItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    navMenu.style.left = "-100%";
+  item.addEventListener('click', () => {
+    navMenu.style.left = '-100%';
   });
 });
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', () => {
   displayProjects(projects);
-  popupBtns = document.querySelectorAll(".popupBtn");
+  popupBtns = document.querySelectorAll('.popupBtn');
 
   popupBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
+    btn.addEventListener('click', (e) => {
       if (btnId.includes(parseInt(e.target.dataset.id))) {
         let projectIndex = projects[parseInt(e.target.dataset.id) - 1];
         popupContainer.innerHTML = `
@@ -44,9 +44,9 @@ window.addEventListener("DOMContentLoaded", () => {
                 ${projectIndex.projectInfo}
                   </p>
             </div>
-                  <i class="uil uil-multiply close-btn popup-btn"></i>
+                  <i class="uil uil-multiply close-btn" id = "popup-btn"></i>
               </div>
-              <div class="popup-img"><img src="${projectIndex.projectimg}" alt="popup project img" class="popimg"></div>
+              <img src="${projectIndex.projectimg}" alt="popup project img" class="popimg">
               <div class="pop-text">
                 <p class="articel-context">
                     ${projectIndex.porjectDetail}
@@ -60,14 +60,19 @@ window.addEventListener("DOMContentLoaded", () => {
                     <li class="mini button">${projectIndex.techpopup[4]}</li>
                     <li class="mini button">${projectIndex.techpopup[5]}</li>
                   </ul>
-                  <button class="btn">${projectIndex.popupBtn1}</button>
-                  <button class="btn">${projectIndex.popupBtn2}</button>
+                  <button class="btn">${projectIndex.popupBtn1} <img src="./images/Icon.svg" alt="live icon"></button>
+                  <button class="btn">${projectIndex.popupBtn2} <img src="./images/Vector (2).svg" alt="github icon"></button>
                   </div>
               </div>
             </div>
         `;
-        popupBackground.style.transform = "translateX(0)";
+        popupBackground.style.transform = 'translateX(0)';
       }
+      const popupBtn = document.getElementById('popup-btn');
+      popupBtn.addEventListener('click', () => {
+        popupBackground.style.transform = 'translateX(-100%)';
+        console.log("it is click");
+      });
     });
   });
 });
@@ -96,6 +101,6 @@ function displayProjects(projectItems) {
           </article>`;
   });
 
-  displayProject = displayProject.join("");
+  displayProject = displayProject.join('');
   portfolioWrapper.innerHTML = displayProject;
 }

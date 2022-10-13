@@ -5,7 +5,7 @@ const projects = [
     projectInfo: "CANOPY . Back End Dev .2015",
     projectimg: "./images/Snapshoot Portfolio.svg",
     porjectDetail:
-      "A Daily Selection Of Privately Personalized Reads; No Accounts Or Sign-Ups Required.",
+      "A Daily Selection Of Privately Personalized Reads; No Accounts Or Sign-Ups Required. ",
     tech: ["html", "Css", "Javascript"],
     techpopup: ["html", "Css", "Javascript", "Github", "ruby", "Bootstraps"],
     projectBtn: "See project",
