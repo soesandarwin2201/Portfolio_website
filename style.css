@@ -185,41 +185,6 @@ header {
   margin: 3rem;
 }
 
-.Snapshoot {
-  background-image: url(./images/Snapshoot\ Portfolio.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.human {
-  background-image: url(./images/mobile.svg.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img-1 {
-  background-image: url(./images/Snapshoot\ Portfolio1.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img-2 {
-  background-image: url(./images/Snapshoot\ human.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img-3 {
-  background-image: url(./images/Snapshoot\ Portfolio2.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .flexbox .article-text {
   flex-basis: 50%;
   margin: 2rem;
@@ -295,6 +260,80 @@ strong {
 
 .order-4 .article-text {
   order: 1;
+}
+
+/* =========popup project======== */
+#popup-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(143, 161, 178, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+}
+
+.popup-container {
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: scroll;
+}
+
+.popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.popimg {
+  height: 90vh;
+  width: 95%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.pop-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articel-context-popup {
+  flex-basis: 60%;
+}
+
+.btn-popup {
+  flex-basis: 40%;
+}
+
+.btn-popup .btns {
+  flex-wrap: wrap;
+}
+
+.btn-popup .btn {
+  margin-right: 0.5rem;
+}
+
+#popup-btn {
+  font-size: 1.2rem;
+  color: #091f42;
+  position: absolute;
+  top: 38px;
+  right: 38px;
 }
 
 /* ==========about========== */
@@ -496,7 +535,7 @@ input {
 
   .flexbox {
     flex-direction: column;
-    height: 90vh;
+    height: 99vh;
     gap: 0.3rem;
     margin-bottom: 2rem;
   }
@@ -558,6 +597,16 @@ input {
 
   .desktop {
     display: none;
+  }
+
+  .popimg {
+    width: 80vh;
+    height: 70vh;
+  }
+
+  .pop-text {
+    flex-direction: column;
+    margin-inline: 0.5rem;
   }
 
   .contact_wrapper {
