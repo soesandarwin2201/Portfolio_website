@@ -6,7 +6,6 @@
   box-sizing: border-box;
   border: none;
   outline: none;
-  text-transform: capitalize;
   text-decoration: none;
   list-style: none;
 }
@@ -447,6 +446,17 @@ input {
   background-color: #fff;
   border-radius: 0.5rem;
   color: #6070ff;
+}
+
+#error-message {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: #6070ff;
+  border: 1px solid #ff2b2b;
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 
 @keyframes form {
