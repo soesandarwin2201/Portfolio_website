@@ -105,19 +105,40 @@ function displayProjects(projectItems) {
   portfolioWrapper.innerHTML = displayProject;
 }
 
-const form = document.getElementsByTagName("form")[0];
-const email = document.getElementById("email");
-const errorContainer = document.getElementById("error-message");
+const form = document.getElementsByTagName('form')[0];
+const email = document.getElementById('email');
+const errorContainer = document.getElementById('error-message');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   if (form.elements.email.value.toLowerCase() === form.elements.email.value) {
     form.submit();
   } else {
     e.preventDefault();
-    const message = document.createElement("p");
-    message.innerText = "Your Email need to be in Lowercase.";
+    const message = document.createElement('p');
+    message.innerText = 'Your Email need to be in Lowercase.';
     errorContainer.append(message);
     errorContainer.style.opacity = 1;
   }
 });
+
+const name = document.getElementById('name');
+const message = document.getElementById('textarea');
+
+form.addEventListener('input', () => {
+  const formData = {
+    userName: form.elements.name.value,
+    userEmail: form.elements.email.value,
+    userMessage: form.elements.textarea.value,
+  };
+
+  localStorage.setItem('UserStoreData', JSON.stringify(formData));
+
+  console.log(form.elements.name.value);
+});
+
+const getData = JSON.parse(localStorage.getItem('formData'));
+form.elements.name.value = getData.userName;
+form.elements.email.value = getData.userEmail;
+form.elements.textarea.value = getData.userMessage;
+
 
