@@ -30,7 +30,7 @@ section {
 
 .btn {
   background-color: transparent;
-  color: #6070ff;
+  color: #2034ed;
   padding: 0.9rem 3rem;
   font-size: 0.875rem;
   letter-spacing: 2.7;
@@ -50,11 +50,11 @@ h4 {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: #344563;
+  color: #394b6a;
 }
 
-h5 {
-  color: #7f8cff;
+h2 {
+  color: #1c2ed1;
   font-size: 0.89rem;
   margin-top: 1rem;
 }
@@ -239,7 +239,7 @@ strong {
   border-radius: 8px;
   padding: 0.5rem 0.9rem;
   margin: 0.3rem;
-  color: #6070ff;
+  color: #182deb;
 }
 
 .mobile {
@@ -330,7 +330,7 @@ strong {
 
 #popup-btn {
   font-size: 1.2rem;
-  color: #091f42;
+  color: #051a3d;
   position: absolute;
   top: 38px;
   right: 38px;
@@ -416,7 +416,7 @@ strong {
 
 .contact-context h1 {
   font-size: 2rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   line-height: 1.6;
   letter-spacing: 1.5;
 }
@@ -424,7 +424,7 @@ strong {
 .contact-main {
   text-align: center;
   font-size: 1rem;
-  color: #ebebff;
+  color: rgba(255, 255, 255, 0.845);
   width: 35vw;
 }
 
@@ -438,6 +438,17 @@ strong {
   animation-delay: 5s;
 }
 
+.form-detail {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.845);
+}
+
 input {
   padding: 0.5rem 2rem;
 }
@@ -445,7 +456,7 @@ input {
 .form-btn {
   background-color: #fff;
   border-radius: 0.5rem;
-  color: #6070ff;
+  color: #1e33ea;
 }
 
 #error-message {

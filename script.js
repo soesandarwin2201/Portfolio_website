@@ -82,7 +82,7 @@ function displayProjects(projectItems) {
     btnId.push(project.id);
     return `<article class="flexbox order-1">
             <img class="portfoilio-img desktop" src="${project.projectimg}" alt="project img">
-            <img class="portfoilio-img mobile" src="${project.projectimg}" alt="project img">
+            <img class="portfoilio-img mobile" src="${project.projectimg}" alt="project2 img">
             <div class="article-text">
               <h2 class="project-name">${project.projectName}</h2>
               <p class="job">
