@@ -140,5 +140,3 @@ const getData = JSON.parse(localStorage.getItem('formData'));
 form.elements.name.value = getData.userName;
 form.elements.email.value = getData.userEmail;
 form.elements.textarea.value = getData.userMessage;
-
-
