@@ -122,13 +122,13 @@ form.addEventListener('submit', (e) => {
 });
 
 const name = document.getElementById('name');
-const message = document.getElementById('textarea');
+const message = document.getElementById('comment');
 
 form.addEventListener('input', () => {
   const formData = {
     userName: form.elements.name.value,
     userEmail: form.elements.email.value,
-    userMessage: form.elements.textarea.value,
+    userMessage: form.elements.comment.value,
   };
 
   localStorage.setItem('UserStoreData', JSON.stringify(formData));
@@ -139,4 +139,4 @@ form.addEventListener('input', () => {
 const getData = JSON.parse(localStorage.getItem('formData'));
 form.elements.name.value = getData.userName;
 form.elements.email.value = getData.userEmail;
-form.elements.textarea.value = getData.userMessage;
+form.elements.comment.value = getData.userMessage;
