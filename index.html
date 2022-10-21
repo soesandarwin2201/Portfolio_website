@@ -24,7 +24,7 @@
       <!--header section-->
       <header class="header">
         <!--logo-->
-        <a href="#index.html" class="logo">My logo</a>
+        <a href="index.html" class="logo">My logo</a>
 
         <!--navbar-->
         <nav>
@@ -59,7 +59,7 @@
             contact me.
           </p>
 
-          <h5>LET'S CONNECT</h5>
+          <h2>LET'S CONNECT</h2>
 
           <ul class="social_links">
             <li>
@@ -69,13 +69,13 @@
               <a href=""><img src="./images/linkedin.svg" alt="linkedin" /></a>
             </li>
             <li>
-              <a href=""><img src="./images/Vector (2).svg" alt="" /></a>
+              <a href="peace logo"><img src="./images/Vector (2).svg" alt="github logo" /></a>
             </li>
             <li>
-              <a href=""><img src="./images/Vector (1).svg" alt="" /></a>
+              <a href=""><img src="./images/Vector (1).svg" alt="peace sign" /></a>
             </li>
             <li>
-              <a href=""><img src="./images/Vector (3).svg" alt="" /></a>
+              <a href=""><img src="./images/Vector (3).svg" alt="medium logo" /></a>
             </li>
           </ul>
         </article>
@@ -109,7 +109,7 @@
               like what you see and have a project you need coded, don’t
               hestiate to contact me.
             </p>
-            <h5>LET'S CONNECT</h5>
+            <h2>LET'S CONNECT</h2>
 
             <ul class="social_links">
               <li>
@@ -123,13 +123,13 @@
                 /></a>
               </li>
               <li>
-                <a href=""><img src="./images/Vector (2).svg" alt="" /></a>
+                <a href=""><img src="./images/Vector (2).svg" alt="github logo" /></a>
               </li>
               <li>
-                <a href=""><img src="./images/Vector (1).svg" alt="" /></a>
+                <a href=""><img src="./images/Vector (1).svg" alt="peace sign" /></a>
               </li>
               <li>
-                <a href=""><img src="./images/Vector (3).svg" alt="" /></a>
+                <a href=""><img src="./images/Vector (3).svg" alt="medium logo" /></a>
               </li>
             </ul>
             <button class="btn">Get My Resume</button>
@@ -138,26 +138,26 @@
           <article class="lang">
             <div class="lang-title">
               <h3>Languages</h3>
-              <a href="#" class="arrow"><i class="uil uil-angle-down"></i></a>
+              <span  class="arrow"><i class="uil uil-angle-down"></i></span>
             </div>
-            <ul class="lang-img desktop flex">
+            <ul class="lang-img desktop flex" id="here">
               <li><img src="./images/Frame 9.svg" alt="html" /></li>
-              <li><img src="./images/Frame 10.svg" alt="html" /></li>
-              <li><img src="./images/Frame 11.svg" alt="html" /></li>
+              <li><img src="./images/Frame 10.svg" alt="css" /></li>
+              <li><img src="./images/Frame 11.svg" alt="javscript" /></li>
             </ul>
             <ul class="lang-img mobile">
               <li><img src="./images/Frame 9 (1).svg" alt="html" /></li>
-              <li><img src="./images/Frame 10 (1).svg" alt="html" /></li>
-              <li><img src="./images/Frame 11 (1).svg" alt="html" /></li>
+              <li><img src="./images/Frame 10 (1).svg" alt="css" /></li>
+              <li><img src="./images/Frame 11 (1).svg" alt="javscript" /></li>
             </ul>
             <ul class="lang-title Frameworks">
               <h4>Frameworks</h4>
-              <a href="#" class="arrow"><i class="uil uil-angle-right"></i></a>
+              <span  class="arrow"><i class="uil uil-angle-right"></i></span>
             </ul>
 
             <ul class="lang-title Frameworks">
               <h4>Skills</h4>
-              <a href="#" class="arrow"><i class="uil uil-angle-right"></i></a>
+              <span class="arrow"><i class="uil uil-angle-right"></i></span>
             </ul>
           </article>
         </div>
@@ -177,8 +177,20 @@
           </p>
 
           <form action="https://formspree.io/f/mzbwrolk" class="contact-form" method="post">
-            <input type="text" placeholder="Alexandra Loremipsum" />
+            
+            <div class="form-detail">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Alexandra Loremipsum" name="name"  id="name"/>
+            </div>
+
+            <div class="form-detail">
+              <label for="email">Your email</label>
             <input type="email" placeholder="aleandra@gamil.com" name="email" id="email"/>
+            </div>
+            
+
+            <div class="form-detail">
+              <label for="comment">Write your comment: </label>
             <textarea
               name="textarea"
               id="comment"
@@ -186,6 +198,7 @@
               rows="10"
               placeholder="Write your message here"
             ></textarea>
+            </div>
             <button class="btn form-btn">Get in touch</button>
           </form>
           <p id="error-message"></p>
