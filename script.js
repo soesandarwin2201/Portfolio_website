@@ -61,8 +61,9 @@ window.addEventListener('DOMContentLoaded', () => {
                     <li class="mini button">${projectIndex.techpopup[4]}</li>
                     <li class="mini button">${projectIndex.techpopup[5]}</li>
                   </ul>
-                  <button class="btn">${projectIndex.popupBtn1} <img src="./images/Icon.svg" alt="live icon"></button>
-                  <button class="btn">${projectIndex.popupBtn2} <img src="./images/Vector (2).svg" alt="github icon"></button>
+                  <button class="btn">${projectIndex.popupBtn1} <a href="https://soesandarwin2201.github.io/portfolio-website-soesandarwin2201.github.io/"><img src="./images/Icon.svg" alt="live icon"></a>
+                  </button>
+                  <button class="btn">${projectIndex.popupBtn2} <a href="https://github.com/soesandarwin2201"><img src="./images/Vector (2).svg" alt="github icon"> </a></button>
                   </div>
               </div>
             </div>
